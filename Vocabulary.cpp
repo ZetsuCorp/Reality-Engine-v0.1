@@ -1,46 +1,60 @@
-#pragma once
+#include "Vocabulary.h"
 
-#include <cstddef>
-#include <cstdint>
-#include <string>
-#include <unordered_map>
-#include <utility>
-#include <vector>
+Vocabulary::Vocabulary()
+    : nextId(4)
+{
+    idToToken.reserve(4);
 
-namespace rare::tokenizer {
+    idToToken.push_back("<PAD>");
+    idToToken.push_back("<UNK>");
+    idToToken.push_back("<BOS>");
+    idToToken.push_back("<EOS>");
 
-struct BytePair {
-    std::string left;
-    std::string right;
+    tokenToId.emplace("<PAD>", PAD_ID);
+    tokenToId.emplace("<UNK>", UNK_ID);
+    tokenToId.emplace("<BOS>", BOS_ID);
+    tokenToId.emplace("<EOS>", EOS_ID);
+}
 
-    bool operator==(const BytePair& other) const {
-        return left == other.left && right == other.right;
-    }
-};
+uint32_t Vocabulary::addToken(const std::string& token)
+{
+    auto it = tokenToId.find(token);
 
-struct BytePairHash {
-    std::size_t operator()(const BytePair& pair) const noexcept;
-};
+    if (it != tokenToId.end())
+        return it->second;
 
-class BPE {
-public:
-    using MergeMap = std::unordered_map<BytePair, std::size_t, BytePairHash>;
+    const uint32_t id = nextId++;
 
-    BPE() = default;
+    tokenToId.emplace(token, id);
+    idToToken.push_back(token);
 
-    void set_merges(MergeMap merges);
-    const MergeMap& merges() const noexcept;
+    return id;
+}
 
-    // Applies learned merges to a sequence of byte-string symbols.
-    std::vector<std::string> apply(const std::vector<std::string>& symbols) const;
+uint32_t Vocabulary::getTokenId(const std::string& token) const
+{
+    auto it = tokenToId.find(token);
 
-    // Returns the next merge that should be applied, if any.
-    bool best_merge(const std::vector<std::string>& symbols,
-                    std::size_t& position,
-                    BytePair& pair) const;
+    if (it != tokenToId.end())
+        return it->second;
 
-private:
-    MergeMap merges_;
-};
+    return UNK_ID;
+}
 
-} // namespace rare::tokenizer
+const std::string& Vocabulary::getToken(uint32_t id) const
+{
+    if (id < idToToken.size())
+        return idToToken[id];
+
+    return idToToken[UNK_ID];
+}
+
+bool Vocabulary::contains(const std::string& token) const
+{
+    return tokenToId.find(token) != tokenToId.end();
+}
+
+std::size_t Vocabulary::size() const
+{
+    return idToToken.size();
+}
