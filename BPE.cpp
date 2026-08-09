@@ -1,91 +1,166 @@
-#include "Vocabulary.h"
+#include "BPE.h"
 
-#include <fstream>
-#include <sstream>
-#include <stdexcept>
+#include <cstddef>
+#include <limits>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
 
 namespace rare::tokenizer {
+
+BPE::BPE() = default;
+
+std::size_t BPE::PairHash::operator()(
+    const std::pair<std::string, std::string>& pair) const noexcept {
+    const std::size_t h1 = std::hash<std::string>{}(pair.first);
+    const std::size_t h2 = std::hash<std::string>{}(pair.second);
+    return h1 ^ (h2 + static_cast<std::size_t>(0x9e3779b9) + (h1 << 6U) + (h1 >> 2U));
+}
+
 namespace {
 
-std::string json_escape(const std::string& value) {
-    std::ostringstream out;
-    for (unsigned char c : value) {
-        switch (c) {
-            case '"': out << "\\\""; break;
-            case '\\': out << "\\\\"; break;
-            case '\n': out << "\\n"; break;
-            case '\r': out << "\\r"; break;
-            case '\t': out << "\\t"; break;
-            default:
-                if (c < 0x20) {
-                    const char* hex = "0123456789abcdef";
-                    out << "\\u00" << hex[c >> 4] << hex[c & 0x0f];
-                } else {
-                    out << static_cast<char>(c);
-                }
+using Symbol = std::string;
+using Sequence = std::vector<Symbol>;
+using Pair = std::pair<Symbol, Symbol>;
+
+
+std::vector<Symbol> byteSymbols(const std::string& text) {
+    std::vector<Symbol> symbols;
+    symbols.reserve(text.size());
+
+    for (unsigned char byte : text) {
+        symbols.emplace_back(1, static_cast<char>(byte));
+    }
+
+    return symbols;
+}
+
+std::unordered_map<Pair, std::size_t, BPE::PairHash> countPairs(
+    const std::vector<Sequence>& sequences) {
+    std::unordered_map<Pair, std::size_t, BPE::PairHash> counts;
+
+    for (const Sequence& sequence : sequences) {
+        if (sequence.size() < 2) {
+            continue;
+        }
+
+        for (std::size_t i = 0; i + 1 < sequence.size(); ++i) {
+            ++counts[{sequence[i], sequence[i + 1]}];
         }
     }
-    return out.str();
+
+    return counts;
+}
+
+Pair mostFrequentPair(const std::unordered_map<Pair, std::size_t, BPE::PairHash>& counts) {
+    Pair best;
+    std::size_t bestCount = 0;
+
+    for (const auto& [pair, count] : counts) {
+        if (count > bestCount ||
+            (count == bestCount && (best.first.empty() || pair < best))) {
+            best = pair;
+            bestCount = count;
+        }
+    }
+
+    if (bestCount == 0) {
+        return {};
+    }
+
+    return best;
+}
+
+Sequence mergePair(const Sequence& sequence, const Pair& target) {
+    Sequence merged;
+    merged.reserve(sequence.size());
+
+    for (std::size_t i = 0; i < sequence.size();) {
+        if (i + 1 < sequence.size() &&
+            sequence[i] == target.first &&
+            sequence[i + 1] == target.second) {
+            merged.push_back(target.first + target.second);
+            i += 2;
+        } else {
+            merged.push_back(sequence[i]);
+            ++i;
+        }
+    }
+
+    return merged;
 }
 
 } // namespace
 
-void Vocabulary::clear() {
-    token_to_id_.clear();
-    id_to_token_.clear();
+void BPE::clear() {
+    merges_.clear();
+    mergeRanks_.clear();
 }
 
-bool Vocabulary::contains(const std::string& token) const {
-    return token_to_id_.find(token) != token_to_id_.end();
-}
+void BPE::train(const std::vector<std::string>& corpus, std::size_t mergeCount) {
+    clear();
 
-std::uint32_t Vocabulary::id_for(const std::string& token) const {
-    const auto it = token_to_id_.find(token);
-    return it == token_to_id_.end() ? kUnknownId : it->second;
-}
+    std::vector<Sequence> sequences;
+    sequences.reserve(corpus.size());
 
-const std::string& Vocabulary::token_for(std::uint32_t id) const {
-    if (id >= id_to_token_.size()) {
-        throw std::out_of_range("Vocabulary token ID out of range");
-    }
-    return id_to_token_[id];
-}
-
-std::uint32_t Vocabulary::add(const std::string& token) {
-    const auto existing = token_to_id_.find(token);
-    if (existing != token_to_id_.end()) {
-        return existing->second;
+    for (const std::string& text : corpus) {
+        sequences.push_back(byteSymbols(text));
     }
 
-    const auto id = static_cast<std::uint32_t>(id_to_token_.size());
-    token_to_id_.emplace(token, id);
-    id_to_token_.push_back(token);
-    return id;
-}
+    for (std::size_t iteration = 0; iteration < mergeCount; ++iteration) {
+        const auto counts = countPairs(sequences);
+        const Pair best = mostFrequentPair(counts);
 
-std::size_t Vocabulary::size() const noexcept {
-    return id_to_token_.size();
-}
+        if (best.first.empty() && best.second.empty()) {
+            break;
+        }
 
-bool Vocabulary::save_json(const std::string& path) const {
-    std::ofstream out(path, std::ios::binary);
-    if (!out) return false;
+        const std::size_t rank = merges_.size();
+        merges_.push_back({best.first, best.second});
+        mergeRanks_.emplace(best, rank);
 
-    out << "{\n  \"tokens\": [\n";
-    for (std::size_t i = 0; i < id_to_token_.size(); ++i) {
-        out << "    {\"id\": " << i << ", \"token\": \""
-            << json_escape(id_to_token_[i]) << "\"}";
-        if (i + 1 != id_to_token_.size()) out << ',';
-        out << '\n';
+        for (Sequence& sequence : sequences) {
+            sequence = mergePair(sequence, best);
+        }
     }
-    out << "  ]\n}\n";
-    return true;
 }
 
-bool Vocabulary::load_json(const std::string&) {
-    // Intentionally left for the next implementation pass. The encoder can
-    // load a tokenizer through a dedicated binary/validated format later.
-    return false;
+std::vector<std::string> BPE::apply(const std::string& text) const {
+    Sequence sequence = byteSymbols(text);
+
+    if (sequence.empty() || merges_.empty()) {
+        return sequence;
+    }
+
+    while (sequence.size() > 1) {
+        std::size_t bestRank = std::numeric_limits<std::size_t>::max();
+        Pair bestPair;
+        bool found = false;
+
+        for (std::size_t i = 0; i + 1 < sequence.size(); ++i) {
+            const Pair pair{sequence[i], sequence[i + 1]};
+            const auto it = mergeRanks_.find(pair);
+
+            if (it != mergeRanks_.end() && it->second < bestRank) {
+                bestRank = it->second;
+                bestPair = pair;
+                found = true;
+            }
+        }
+
+        if (!found) {
+            break;
+        }
+
+        sequence = mergePair(sequence, bestPair);
+    }
+
+    return sequence;
+}
+
+const std::vector<BPE::Merge>& BPE::merges() const noexcept {
+    return merges_;
 }
 
 } // namespace rare::tokenizer
