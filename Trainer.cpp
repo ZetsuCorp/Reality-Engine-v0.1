@@ -1,21 +1,39 @@
-#pragma once
+#include "Trainer.h"
+#include <stdexcept>
 
-#include "Vocabulary.h"
+BPETrainer::BPETrainer() = default;
 
-#include <cstdint>
-#include <string>
-#include <vector>
+BPETrainer::BPETrainer(const Config& config) : config_(config) {}
 
-namespace rare::tokenizer {
+void BPETrainer::setConfig(const Config& config) {
+    config_ = config;
+}
 
-class Decoder {
-public:
-    explicit Decoder(const Vocabulary& vocabulary);
+const BPETrainer::Config& BPETrainer::getConfig() const noexcept {
+    return config_;
+}
 
-    std::string decode(const std::vector<std::uint32_t>& ids) const;
+std::size_t BPETrainer::determineMergeCount(
+    std::size_t initialVocabularySize) const {
+    if (config_.max_merges != 0) return config_.max_merges;
+    if (config_.target_vocab_size <= initialVocabularySize) return 0;
+    return config_.target_vocab_size - initialVocabularySize;
+}
 
-private:
-    const Vocabulary& vocabulary_;
-};
+BPE BPETrainer::train(const Corpus& corpus) const {
+    if (corpus.empty()) {
+        throw std::invalid_argument("BPETrainer::train: corpus cannot be empty.");
+    }
+    if (config_.min_pair_frequency == 0) {
+        throw std::invalid_argument("BPETrainer::train: min_pair_frequency must be greater than zero.");
+    }
 
-} // namespace rare::tokenizer
+    constexpr std::size_t initialVocabularySize = 256;
+    const std::size_t mergeCount = determineMergeCount(initialVocabularySize);
+
+    BPE bpe;
+    if (mergeCount != 0) {
+        bpe.train(corpus, mergeCount, config_.min_pair_frequency);
+    }
+    return bpe;
+}
