@@ -1,30 +1,27 @@
 #pragma once
 
+#include "BPE.h"
+#include "Vocabulary.h"
+
 #include <cstdint>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 namespace rare::tokenizer {
 
-class Vocabulary {
+class Encoder {
 public:
-    static constexpr std::uint32_t kUnknownId = 0;
+    Encoder() = default;
+    Encoder(const BPE& bpe, const Vocabulary& vocabulary);
 
-    void clear();
-    bool contains(const std::string& token) const;
-    std::uint32_t id_for(const std::string& token) const;
-    const std::string& token_for(std::uint32_t id) const;
+    void set_bpe(const BPE& bpe);
+    void set_vocabulary(const Vocabulary& vocabulary);
 
-    std::uint32_t add(const std::string& token);
-    std::size_t size() const noexcept;
-
-    bool save_json(const std::string& path) const;
-    bool load_json(const std::string& path);
+    std::vector<std::uint32_t> encode(const std::string& text) const;
 
 private:
-    std::unordered_map<std::string, std::uint32_t> token_to_id_;
-    std::vector<std::string> id_to_token_;
+    const BPE* bpe_ = nullptr;
+    const Vocabulary* vocabulary_ = nullptr;
 };
 
 } // namespace rare::tokenizer
