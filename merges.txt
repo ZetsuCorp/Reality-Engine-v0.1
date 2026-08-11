@@ -1,0 +1,1244 @@
+e	 
+a	l
+t	i
+o	n
+r	e
+\n	\n
+i	n
+t	h
+t	e
+s	 
+y	 
+d	 
+i	t
+R	e
+t	 
+a	n
+th	e 
+e	n
+Re	al
+Real	it
+o	r
+ti	on
+.	\n\n
+e	r
+i	s
+Realit	y 
+e	s
+,	 
+u	n
+a	tion
+â	€
+¢	 
+al	 
+g	 
+a	r
+â€	¢ 
+s	t
+l	 
+un	ti
+e	d 
+-	-
+c	on
+unti	m
+i	s 
+R	untim
+i	d
+b	l
+in	g 
+a	c
+s	h
+f	or
+a	bl
+Runtim	e 
+d	e
+ 	the 
+\n	â€¢ 
+te	r
+u	al 
+ation	 
+i	c
+al	l 
+r	o
+re	s
+n	c
+T	h
+#	 
+e	re
+l	e
+an	d 
+is	ual 
+sh	all 
+f	ere
+fere	nc
+is	h
+n	o
+en	er
+q	u
+a	 
+abl	ish
+o	f
+Th	e 
+h	i
+o	l
+t	r
+u	c
+es	t
+v	e 
+e	x
+--	-
+b	e
+for	m
+ 	 
+st	r
+te	d 
+u	l
+ablish	ed 
+y	s
+a	t
+---	\n\n
+o	 
+o	de
+u	r
+ar	tr
+artr	id
+artrid	g
+e	d
+l	y 
+s	i
+e	c
+g	in
+te	n
+a	s
+e	s 
+m	p
+s	u
+M	ode
+no	t 
+str	uc
+.\n\n	---\n\n
+in	form
+A	r
+E	n
+or	 
+p	l
+Realit	y
+p	ro
+re	qu
+a	g
+te	c
+.\n\n	The 
+g	ener
+ferenc	e 
+h	a
+v	isual 
+Runtime 	shall 
+ti	n
+ti	ve 
+En	gin
+Reality 	Engin
+en	 
+t	o 
+on	 
+Reality 	Mode
+c	o
+en	t
+c	hi
+er	 
+te	m
+chi	tec
+est	ablished 
+ys	tem
+I	n
+s	, 
+m	a
+of	 
+S	t
+C	artridg
+inform	ation 
+l	o
+d	er
+#	# 
+V	isual 
+Reality 	Cartridg
+at	e 
+c	e
+i	f
+b	e 
+en	ti
+*	*
+Ar	chitec
+i	re
+i	th
+u	s
+C	an
+\n\n	â€¢ 
+tin	g 
+a	t 
+g	u
+ol	v
+w	ith
+Reality 	Architec
+a	p
+i	z
+ten	t 
+l	e 
+p	res
+Reality Engin	e 
+.\n\n---\n\n	# 
+ac	tive 
+an	gu
+angu	ag
+e	t
+in	g
+p	er
+i	l
+of	 the 
+p	ec
+an	 
+g	h
+re	ferenc
+  	  
+G	ener
+a	ted 
+co	mp
+con	s
+der	st
+f	in
+res	olv
+w	 
+.	 
+an	d
+con	struc
+m	ent
+s	ystem
+th	at 
+tion	 
+abl	e 
+ac	ter
+ar	acter
+h	aracter
+in	ter
+Reality Mode	l
+a	s 
+id	enti
+resolv	ed
+s	pec
+te	x
+v	i
+a	d
+a	in
+e	, 
+h	en 
+ic	 
+un	derst
+b	y 
+p	re
+re	as
+te	d
+-	 
+.\n\nThe 	Runtime shall 
+A	n
+Reality Architec	t 
+pl	ic
+.\n\n---\n\n	## 
+E	x
+le	v
+v	er
+ 	]
+ ]	 
+St	y
+[	 ] 
+e	.\n\n
+i	ti
+requ	ire
+'	s 
+An	al
+an	si
+cons	is
+t	s 
+\n	[ ] 
+C	on
+E	st
+Est	ablished 
+R	E
+Reality	.\n\n
+c	artridg
+de	fin
+en	t 
+ha	s 
+is 	the 
+n	e
+t	u
+\n	- 
+tion	s
+ 	â€
+ â€	”
+ â€”	 
+In	ference 
+Reality Mode	l 
+al	id
+c	e 
+c	es
+for	 
+r	i
+, 	and 
+, 	the 
+:	\n\nâ€¢ 
+a	te
+ex	is
+for	e 
+i	ed 
+m	in
+p	ansi
+p	or
+reas	on
+tex	t
+underst	and
+Anal	ys
+b	j
+be	en 
+bj	ec
+ce	p
+d	es
+hi	le 
+.	\n
+A	L
+AL	I
+Can	on
+I	N
+ing 	the 
+lev	an
+re	ference 
+Ar	t 
+E	D
+S	ystem
+cartridg	e 
+k	no
+kno	w
+o	u
+ter	i
+ti	c
+A	 
+Art 	Sty
+Can	on 
+L	anguag
+Reality Cartridg	e 
+Visual 	Languag
+al	iz
+con	tent 
+es	t 
+haracter	 
+ma	teri
+resolved	\n[ ] 
+s	o
+t	ain
+\nâ€¢ 	C
+St	or
+e	v
+it	s 
+l	i
+levan	t 
+pres	er
+ti	s
+Analys	is 
+d	uc
+f	y 
+in	struc
+inform	ation
+ne	w 
+o	per
+o	ul
+oul	d 
+p	o
+requ	est
+require	d 
+sh	ould 
+spec	if
+th	er 
+w	hile 
+with	in
+\n\n	The 
+.	\nâ€¢ 
+R	ul
+W	hen 
+comp	le
+es	, 
+et	su
+in	iti
+re	a
+ro	u
+rou	gh
+t 	the 
+Re	qu
+a	il
+c	ur
+g	n
+l	anguag
+ma	in
+n	al 
+referenc	es
+res	ul
+so	ur
+th	rough
+tion	s 
+â	„
+:	\n\n
+E	 
+T	I
+e 	the 
+i	p
+it	 
+n	th
+nth	es
+pro	ces
+ro	m
+su	p
+t	o
+u	al
+w	h
+w	or
+y	nthes
+y	z
+Ex	pansi
+Runtim	e
+ag	e 
+be	fore 
+co	m
+e	l
+h	o
+on	ly 
+po	s
+re	l
+si	on
+sour	ce 
+ur	e 
+â	”
+, the 	Runtime shall 
+D	e
+Gener	ation 
+an	al
+consis	tent 
+e	\n\n
+e	\nâ€¢ 
+ex	plic
+f	rom
+identi	t
+inter	nal 
+is	ual
+l	es
+n	 
+reason	ing 
+s	a
+ the 	Reality 
+Rul	e 
+c	or
+d	o
+lo	w
+materi	al 
+mp	le
+referenc	es 
+ the 	active 
+a	ting 
+as	s
+ate 	the 
+c	ri
+con	text
+est	ablish
+ex	a
+gener	ation
+it	y 
+pro	duc
+r	on
+s 	the 
+shall 	be 
+sup	pl
+system	s, 
+t	ure 
+tu	re
+understand	ing 
+vi	ron
+w	hen 
+y	.\n\n
+, 	or 
+Art Sty	le 
+R	.
+Reality Cartridg	e
+Reality Model	.\n\n
+Stor	y 
+a	v
+anal	yz
+ar	e 
+at	ter
+con	tain
+con	tin
+des	cri
+ed 	by 
+gener	ated 
+ha	vi
+initi	aliz
+o 	not 
+p	e
+resul	t 
+s	.\n\n
+sh	ip
+suppl	ied 
+t	.\n\n
+t	e 
+te	nc
+v	alid
+\n	    
+\n    	    
+ 	a 
+**	\n\n
+.\n\n---\n\n# 	Rule 
+A	I
+ALI	T
+ALIT	Y
+RE	ALITY
+Runtime	's 
+S	ynthes
+System	 
+V	alid
+ar	chitec
+atter	n
+av	ail
+be	gin
+be	havi
+c	an
+c	ol
+contin	u
+f	i
+gener	ic 
+has 	been 
+is 	a 
+l	u
+o	bjec
+pl	ac
+re	n
+re	plac
+rea	tive 
+s	\n\n
+t	re
+ti	tu
+.	m
+.m	d
+C	reative 
+Creative 	Expansi
+Gener	ic 
+Reality	-
+Synthes	is 
+T	 
+T	E
+Z	etsu
+an	y 
+as	su
+ation	\n\n
+c	haracter
+de	p
+exa	min
+f	ter
+i	m
+in	 
+information 	is 
+it	ly 
+les	s 
+o	c
+o	th
+preser	v
+r	a
+re	main
+shall 	not 
+specif	ic
+t	, 
+tic	 
+viron	ment
+wor	k
+\nâ€¢ C	haracter 
+.	**\n\n
+. 	Re
+Analysis 	Reality Engin
+N	O
+Reality Architect 	instruc
+Requ	ire
+a	fter
+ac	k
+and 	the 
+ap	pro
+ation	ship
+b	s
+behavi	or
+d	g
+d	ing 
+do	es 
+does 	not 
+f	ic
+f	il
+i	mple
+initializ	ation 
+inter	pre
+know	le
+knowle	dg
+m	ent 
+ma	y 
+p	ri
+per	form
+proces	s 
+requ	est 
+s	es
+sa	tis
+si	on 
+st	y
+u	p
+unti	l 
+ver	y 
+within	 the 
+â„	¢ 
+D	o not 
+ED	 
+Ex	ten
+I	t 
+System 	Exten
+U	n
+V	isual
+ac	cep
+al	ly 
+ap	able 
+ap	pe
+ap	plic
+appe	ar
+assu	mp
+ate	s 
+bs	titu
+c	apable 
+consis	tenc
+es	ted 
+explic	itly 
+i	gn
+information	.\n\n
+know	n 
+m	ode
+re	levant 
+su	bstitu
+ter	min
+ti	v
+tis	tic 
+understand	ing
+\n	# 
+---\n\n	# 
+B	e
+C	O
+Con	tex
+Contex	t 
+Established 	Canon
+I	f
+Mode	l 
+Reality	's 
+Th	es
+Thes	e 
+ar	tistic 
+ation	, 
+by 	the 
+comp	on
+con	ten
+context	ual 
+des	ign
+es 	the 
+established 	Reality 
+f	li
+fli	gh
+ho	w 
+in	to 
+le	\nâ€¢ 
+ol	ve 
+ou	t 
+preser	ve 
+s	\nâ€¢ 
+tec	h
+ther 	th
+u	th
+v	en
+v	er 
+y	, 
+\n\n	A 
+.\n\n	When 
+.\n\nThe Runtime shall 	not 
+.**\n\n	**
+Be	fore 
+C	T
+De	p
+Dep	th
+In	struc
+Inference 	Depth
+N	o 
+Require	d 
+Runtime 	reasoning 
+accep	ted 
+as 	the 
+ass	et
+b	i
+c	t
+capable 	of 
+ed	.\n\n
+ex	pansi
+f	ul
+fy 	the 
+identit	y 
+if	ied 
+imple	ment
+lo	g
+o	o
+ol	u
+or	i
+ou	t
+p	attern
+p	u
+r	untim
+re	d 
+rel	ationship
+remain	s 
+runtim	e 
+s, 	and 
+te	l
+ted	.\nâ€¢ 
+th	is 
+through	 
+tion 	of 
+tre	at
+un	less 
+ur	pos
+uth	or
+\n\nThe 	Runtime shall 
+. Re	levant 
+A	l
+B	oo
+Creative Expansi	on 
+E	CT
+Established 	Canon 
+IN	S
+INS	P
+INSP	ECT
+NO	T 
+Re	ference 
+Reality Architect instruc	tions
+Reality Engine 	specific
+Zetsu	m
+Zetsum	etsu
+Zetsumetsu	 
+a	b
+ac	t
+ad	y 
+ain	s
+architec	ture 
+ation	s
+be	com
+bi	ted.\nâ€¢ 
+bl	e 
+con	cep
+con	ven
+cur	r
+curr	ing 
+d	ur
+defin	e 
+exis	ting 
+f	er
+fic	i
+from	 
+gener	ation 
+ha	t 
+ha	ve 
+hi	bited.\nâ€¢ 
+identi	fi
+in	spec
+is	s
+is 	pro
+is pro	hibited.\nâ€¢ 
+iss	ing 
+lo	ad
+lu	str
+m	e
+m	or
+m	us
+mus	t 
+o	ver 
+o	w
+out	pu
+ra	ther th
+re	ady 
+reas	on 
+res	er
+source 	material 
+specif	ic 
+st	ate 
+ture	\nâ€¢ 
+ver	if
+vironment	al 
+with	 the 
+â„	¢
+\n        	â”
+\n        â”	‚
+#	## 
+.	R.
+.\n\n---\n\n# 	S
+.R.	E
+A	.R.E
+AI	 
+C	haracter 
+Con	text
+E	RE
+I	d
+Id	enti
+Inference Depth	 
+L	oc
+N	INSPECT
+P	 
+P	re
+P	reser
+R.	A.R.E
+REALITY	 
+Runtime 	to 
+S	ha
+S	u
+Th	is 
+U	NINSPECT
+Visual Languag	e 
+`	`
+a	m
+a	ti
+ack	age 
+ag	ains
+an 	active 
+an 	internal 
+appro	pri
+avail	able 
+c	ed
+comp	ati
+compon	ent
+construc	t 
+construc	ted 
+construc	tion
+contain	ed 
+d	is
+dep	en
+depen	d
+der	ing 
+e	y 
+e 	or 
+ec	u
+ed 	to 
+en	 the 
+en	ce
+ere	d 
+ex	ecu
+ex	p
+exis	ts 
+f	id
+f	ol
+fid	el
+ho	w
+i	qu
+i	v
+in	ference 
+ing 	a 
+is 	not 
+is 	to 
+is the 	process 
+iz	ed 
+le	s 
+lustr	ation 
+m	e 
+m	issing 
+m	ul
+main	tain
+may 	be 
+mor	e 
+n	iqu
+ne	w
+new	ly 
+o	ther 
+o	ver
+of the 	active 
+olu	tion
+on	g
+oper	ation
+oth	er
+p	ackage 
+p	on
+pres	en
+r	u
+rather th	an 
+re	curring 
+reason	ing
+replac	e 
+requ	ested 
+res	pon
+shall not 	be 
+system	 
+t	able 
+t	s
+tech	niqu
+to	 the 
+un	ified 
+valid	ation 
+visual 	languag
+w	e
+|	 
+â”	€
+\n\n	Before 
+\n\n	When 
+\n        	â
+\n        â	–
+\n        â”‚	\n        â–
+\n        â”‚\n        â–	¼
+\n        â”‚\n        â–¼	\n
+ the active 	Reality.\n\n
+**	 
+.\n\n---\n\n# S	TE
+.\n\n---\n\n# STE	P 
+.\n\nThe 	Reality Model 
+.md	\n
+:	 
+ALI	Z
+Boo	t 
+C	E 
+C	o
+C	or
+CE 	IN
+CE IN	CO
+CE INCO	M
+CE INCOM	P
+CE INCOMP	L
+CE INCOMPL	E
+ERE	N
+EREN	CE INCOMPLE
+En	vironmental 
+F	ERENCE INCOMPLE
+G	E
+I	TI
+IN	ITI
+INITI	ALIZ
+L	ED
+L	in
+Preser	ve 
+R.A.R.E	.
+RE	FERENCE INCOMPLE
+Re	s
+Reality-	consistent 
+Un	known 
+a	d 
+a	uthor
+a 	Reality.\n\n
+ac	h
+act	ual 
+ad	ic
+after	 
+al	ready 
+appropri	ate 
+as 	a 
+avail	abl
+b	u
+bjec	t 
+c	tion of 
+ces	s
+col	le
+colle	ction of 
+compati	ble 
+con	tr
+contr	adic
+d	ire
+de	s 
+defin	i
+e	lo
+e	very 
+e 	of the 
+elo	p
+en	ce 
+ent	ly 
+es	.\n\n
+ev	olv
+expansi	on
+explic	it 
+f	fici
+f	u
+fol	low
+ful	fil
+generated 	content 
+ic	al 
+identifi	ed
+in	c
+in	d
+in	tel
+initi	al 
+is the process 	of 
+li	g
+lo	c
+mode	l
+mul	ti
+multi	pl
+multipl	e 
+not 	been 
+o	d
+o	g
+o	us
+other	w
+otherw	is
+ous	ly 
+p	ar
+proces	s
+r	ul
+references	.\n\n
+ren	t 
+ro	s
+ru	les 
+ses	sion
+su	ffici
+system	s 
+techniqu	e\nâ€¢ 
+ted	.\n\n
+ter	 
+termin	e 
+the 	Runtime 
+ting 	the 
+un	d
+unless 	explicitly 
+us	e 
+us	ing the 
+v	is
+v	isual
+while 	preserv
+with	 
+y	\nâ€¢ 
+\n\n	Reality Engine 
+ 	F
+ F	AI
+ â€” 	In
+(	R.A.R.E.
+(R.A.R.E.	)
+---	\n# 
+.\nâ€¢ 	H
+.\nâ€¢ 	The 
+1	. 
+2	0
+:\n\n	1. 
+A	R
+A	TI
+A	c
+ALI	D
+ALID	ATI
+ALIDATI	O
+ALIDATIO	N
+ALIDATION	 FAI
+Al	l 
+Art Sty	le
+Cor	por
+E	very 
+Gener	ated 
+Generated 	content 
+I	l
+Identi	fy 
+If	 
+Il	lustration 
+Pre	fligh
+Re	n
+Real	iti
+Reality Architec	t
+Reality Architec	t.\n\n
+Reality Cartridg	e.\n\n
+Reality Cartridge	â„¢ 
+Reality Cartridge 	is 
+Reality Model 	has been 
+Ren	dering 
+Runtime 	implement
+S	T
+S	e
+Stor	y
+Synthesis 	Reality Engin
+System Exten	sion
+System Exten	sion 
+T	i
+Th	ey 
+These 	defini
+These defini	tions 
+Ti	er 
+V	ALIDATION FAI
+Visual	s 
+Visual 	Model 
+W	h
+Zetsumetsu 	Corpor
+a	y
+a 	unified 
+ac	ros
+ac	tiv
+ach	 
+acros	s 
+actual 	visual 
+agains	t the 
+applic	able 
+ar	d
+ar	y 
+as	si
+ass	e
+asse	t 
+ation	s 
+ay	s 
+b	in
+b	oth
+becom	e 
+c	l
+can	not 
+can	on
+ce	des 
+character	is
+com	m
+comple	te 
+consistent 	with the 
+dep	ic
+descri	be 
+dire	ct
+e	-
+e	:\n\nâ€¢ 
+e, 	and 
+e, 	or 
+er	v
+ex	pres
+ex	ten
+f	ail
+f	y
+fer	red 
+from	 the 
+fu	ture 
+g	an
+g	en
+has 	comple
+have 	been 
+i	gh
+i	r
+ic	h
+in	depend
+in	t
+in	ten
+inter	ac
+it	y
+l	ic
+lo	th
+objec	tive 
+oc	cur
+oper	ating 
+p	urpos
+por	table 
+pre	cedes 
+pro	por
+re	pres
+rel	ated 
+res	olve 
+resolved\n[ ] 	Character 
+ro	duc
+s	\n\nâ€¢ 
+s	\n- 
+s	ynthes
+sa	me 
+si	gn
+sty	le\nâ€¢ 
+t	s, 
+tions	\nâ€¢ 
+understanding 	of the 
+until 	the 
+up	d
+us	er 
+visual	ly 
+w	ays 
+w	hat 
+wh	ich
+â„¢ 	| 
+\n\n	---\n\n# 
+\nâ€¢ 	Sha
+ 	NOT 
+ â€” 	Runtime 
+**	.\n\n
+.\n\nThe 	objective 
+.\n\nThe 	result 
+.\n\nThe Runtime shall 	identi
+A	C
+A	p
+AC	TI
+ACTI	V
+ACTIV	E 
+Ac	cep
+Accep	t 
+Anal	yz
+Analys	is
+Ap	plic
+Applic	able 
+Boot 	Se
+Boot Se	qu
+Canon	, 
+Con	struc
+Creative Expansi	on
+D	O
+DO	 NOT 
+De	fin
+Defin	i
+F	or 
+I	m
+Illustration 	Sty
+Im	age 
+Inference 	shall 
+Loc	ation 
+Mode	l
+O	n
+P	attern
+P	o
+REFERENCE INCOMPLE	TE
+Re	as
+Realiti	es 
+Reality Engine specific	ation
+Reas	on
+Rul	es
+U	B
+V	er
+Valid	ation\n\n
+Visual Languag	e
+W	hile 
+Zetsu	 
+Zetsumetsu Corpor	ation
+a	, 
+a 	Reality 
+ac	cor
+ad	at
+after	 the 
+al	et
+al	i
+al	low
+ali	d 
+aliz	e 
+an	ce
+appear	 
+artistic 	languag
+ate	:\n\nâ€¢ 
+be	ing 
+be	t
+begin	 
+bet	we
+c	h
+c	haracter 
+c	re
+c	u
+characteris	tic
+col	or 
+com	bin
+con	str
+consistenc	y 
+constr	ain
+conten	t
+continu	ity 
+cor	por
+cur	rent 
+de	v
+descri	p
+design	\nâ€¢ 
+dev	elop
+dur	ing 
+ed	, 
+el	f
+en	ev
+enev	er 
